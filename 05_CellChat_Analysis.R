@@ -1,6 +1,8 @@
 # CellChat inference and basic network/pathway visualization.
 # Run SGN-Glia and SGN-Epi as separate input objects.
 library(ggplot2)
+library(Seurat)
+library(CellChat)
 
 infer_communication <- function(obj, group_col) {
   stopifnot(group_col %in% names(obj@meta.data), !anyNA(obj[[group_col, drop = TRUE]]))
