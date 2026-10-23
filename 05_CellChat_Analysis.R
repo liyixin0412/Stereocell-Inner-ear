@@ -3,6 +3,8 @@
 library(ggplot2)
 library(Seurat)
 library(CellChat)
+library(future)
+library(ComplexHeatmap)
 
 infer_communication <- function(obj, group_col) {
   stopifnot(group_col %in% names(obj@meta.data), !anyNA(obj[[group_col, drop = TRUE]]))
