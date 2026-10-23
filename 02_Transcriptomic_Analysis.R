@@ -4,6 +4,14 @@ library(Seurat)
 library(Matrix)
 library(dplyr)
 library(ggplot2)
+library(patchwork)
+library(ggrepel)
+library(VennDiagram)
+library(grid)
+library(pheatmap)
+library(viridisLite)
+library(msigdbr)
+library(fgsea)
 
 save_plot <- function(plot, name, out_dir, width = 7, height = 5) {
   ggsave(file.path(out_dir, paste0(name, ".pdf")), plot,
