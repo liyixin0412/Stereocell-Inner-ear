@@ -3,6 +3,8 @@
 library(Seurat)
 library(ggplot2)
 library(tidyr)
+library(pheatmap)
+library(ggridges)
 
 row_zscore <- function(x) {
   s <- apply(x, 1, sd)
