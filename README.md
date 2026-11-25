@@ -91,6 +91,11 @@ Additional dependencies (versions not specified here):
 Use the original analysis environment where possible. The version list documents
 the study software; it is not a complete environment lockfile.
 
+### Software Environment
+
+General bioinformatics analyses were performed using R 4.2.2. The corresponding software environment is documented in `renv.lock`.
+
+Cell-cell communication analysis was performed separately in an independent R environment using CellChat v2.0.0, installed from the GitHub repository `jinworks/CellChat` (commit: `b02aaaf3c4a8e821697b3b03fa2498253b088c08`).
 ## Scope
 
 This repository provides the core computational workflow and illustrative plots.
