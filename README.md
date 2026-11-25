@@ -57,7 +57,7 @@ The following software versions were used in the study.
 | SingleCellExperiment | 1.20.1 |
 | msigdbr | 7.5.1 |
 | fgsea | 1.24.0 |
-| CellChat | 1.6.1 |
+| CellChat | 2.0.0 |
 | pheatmap | 1.0.12 |
 | ggridges | 0.5.6 |
 | ggplot2 | 3.5.1 |
