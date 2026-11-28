@@ -5,7 +5,7 @@ input_file <- "Adult_Fianl_metadata.rds"
 # 1. Adult SGN subtype annotation ------------------------------------------------
 
 obj <- readRDS(input_file)
-obj <- subset(obj, celltype_1127 == "SGN" & source == "StereoCell")
+obj <- subset(obj, celltype == "SGN" & source == "StereoCell")
 
 DefaultAssay(obj) <- "integrated"
 obj <- ScaleData(obj, verbose = FALSE)
@@ -35,7 +35,7 @@ saveRDS(obj, "Adult_SGN.rds")
 # 2. Adult glial subtype annotation ----------------------------------------------
 
 obj <- readRDS(input_file)
-obj <- subset(obj, celltype_1127 == "Glia" & source == "StereoCell")
+obj <- subset(obj, celltype == "Glia" & source == "StereoCell")
 
 DefaultAssay(obj) <- "integrated"
 obj <- ScaleData(obj, verbose = FALSE)
@@ -70,7 +70,7 @@ saveRDS(obj, "Adult_Glia.rds")
 # 3. Adult epithelial cell annotation --------------------------------------------
 
 obj <- readRDS(input_file)
-obj <- subset(obj, celltype_1127 %in% c("Hair Cells", "RM", "SCs", "SV-Basal", "SV-MC", "TBC") & source == "StereoCell")
+obj <- subset(obj, celltype %in% c("Hair Cells", "RM", "SCs", "SV-Basal", "SV-MC", "TBC") & source == "StereoCell")
 
 DefaultAssay(obj) <- "integrated"
 obj <- ScaleData(obj, verbose = FALSE)
