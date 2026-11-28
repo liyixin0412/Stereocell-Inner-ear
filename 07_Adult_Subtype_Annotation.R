@@ -1,6 +1,6 @@
 library(Seurat)
 
-input_file <- "Adult_V6_1128.rds"
+input_file <- "Adult_Fianl_metadata.rds"
 
 # 1. Adult SGN subtype annotation ------------------------------------------------
 
